@@ -1,12 +1,11 @@
 import React from "react";
 
-export default React.createClass({
+export default class App extends React.Component {
 	render() {
 		return (
 			<div>
-				<h1>{this.props.temp}</h1>
-				<h1>{this.props.weather}</h1>
+				{this.props.img ? <img src={this.props.img}/> : null}
 			</div>
 		)	
 	}
-})
+}
